@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background: #c73939;
+            border: black 1px solid;
+            height: 200px;
+            width: 200px;
+        }
+        .box2{
+            background: #51c739;
+            border: black 1px solid;
+            height: 200px;
+            width: 200px;
+        }
+        .box3{
+            background: #c73939;
+            border: black 1px solid;
+            height: 200px;
+            width: 200px;
+        }
+        @media (min-width: 400px) {
+            .box{
+                background: #dfcc20;
+            }
+        }
+        @media (max-width: 500px) {
+            .box2{
+                background: #21afd3;
+            }
+        }
+        @media (min-width: 300px) and (max-width: 600px) {
+            .box3{
+                background: #db6ce6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            BOX
+        </div>
+        <div class="box2">
+            Box2
+        </div>
+        <div class="box3">
+            Box3
+        </div>
+    </section>
+</body>
+</html>

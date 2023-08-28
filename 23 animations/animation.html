@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="shortcut icon" href="myphoto.jpg" type="image/x-icon">
+    <style>
+        /* 
+        @keyframes
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation
+         */
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid red;
+            background-color: rgb(231, 194, 194);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            border-radius: 50%;
+            background-color: lightgoldenrodyellow;
+            margin: 2px;
+            animation: move;
+            position: relative;
+            animation-duration: 5s;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: cubic-bezier(0.07, 2.02, 0.85, -1.7); */
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+            animation-fill-mode: none;
+            /* animation-play-state: paused; */
+        }
+        @keyframes move {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 480px;
+                left: 1080px;
+            }
+        }
+        .circle2{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(255, 0, 170);
+            border-radius: 50%;
+            background-color: rgb(236, 210, 236);
+            margin: 2px;
+            animation: Move;
+            position: relative;
+            /* @keyframes : duration | timing_func | delay | iteration_count | direction | fil_mode | play_state | name */
+            animation: 5s linear 0s infinite alternate none running Move;
+        }
+        @keyframes Move {
+            from{
+                left: 0;
+                bottom: 0;
+            }
+            to{
+                left: 1080px;
+                bottom: 480px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid red;
+            background-color: rgb(231, 194, 194);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide1{
+            height: 30px;
+            width: 100px;
+            border: 2px solid blue;
+            border-radius: 5%;
+            background-color: lightgoldenrodyellow;
+            margin: 2px;
+            align-self: flex-start;
+            animation-name: top;
+            position: relative;
+            animation: 5s linear 0s infinite alternate none running top;
+        }
+        @keyframes top {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1080px;
+            }
+        }
+        .slide2{
+            height: 30px;
+            width: 100px;
+            border: 2px solid blue;
+            border-radius: 5%;
+            background-color: lightgoldenrodyellow;
+            margin: 2px;
+            align-self: flex-end;
+            animation-name: botm;
+            position: relative;
+            animation: 5s linear 0s infinite alternate none running botm;
+        }
+        @keyframes botm {
+            from{
+                bottom: 0;
+                right: 0;
+            }
+            to{
+                bottom: 0;
+                right: 1080px;
+            }
+        }
+        .bol{
+            height: 50px;
+            width: 50px;
+            border: 2px solid rgb(8, 49, 18);
+            border-radius: 50%;
+            background-color: rgb(20, 197, 34);
+            margin: 2px;
+            align-self: center;
+            animation-name: cntr;
+            position: relative;
+            /* animation-timing-function: cubic-bezier(0.07, 2.02, 0.85, -1.7); */
+            animation: 5s cubic-bezier(0.07, 2.02, 0.85, -1.7) 0s infinite alternate none running cntr;
+        }
+        @keyframes cntr {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            25%{
+                top: 23%;
+                left: 9%;
+            }
+            50%{
+                top: 3%;
+                left: 35%;
+            }
+            75%{
+                top: 7%;
+                left: 10%;
+            }
+            100%{
+                top: 3%;
+                left: 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide1"></div>
+        <div class="bol"></div>
+        <div class="slide2"></div>
+    </div>
+</body>
+</html>

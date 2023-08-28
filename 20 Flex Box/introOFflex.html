@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 3px;
+            padding: 2px;
+        }
+        .container{
+            height: 1000px;
+            border: solid black 4px;
+            background: #b6b169;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: space-between;
+            align-content: start;
+        }
+        .box{
+            border: solid rgb(161, 26, 26) 2px;
+            height: 150px;
+            width: 200px;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            border: solid red 1px ;
+        }
+        #box1{
+            order: 4;
+            flex-basis: auto;
+        }
+        #box2{
+            /* flex-grow: 5; */
+            align-self: center;
+        }
+        #box3{
+            /* flex-shrink: 6; */
+            /* flex: 2 4 50px; */
+            align-self: end;
+        }
+        #box4{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Box</h1>
+    <div class="container">
+        <div class="box" id="box1" style="background-color: aquamarine;" ><button>a</button></div>
+        <div class="box" id="box2" style="background-color: rgb(6, 97, 67);" ><button>b</button></div>
+        <div class="box" id="box3" style="background-color: rgb(9, 192, 107);" ><button>c</button></div>
+        <div class="box" id="box4" style="background-color: rgb(25, 58, 47);" ><button>d</button></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 140px;
+            background-color: darkslategrey;
+            border: solid 1px rgb(62, 39, 65);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            transition-property: width , height, background-color, font-size;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+        }
+        .box2{
+            box-sizing: border-box;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(224, 163, 214);
+            border: solid 1px rgb(69, 44, 70);
+            color: rgb(15, 119, 211);
+            margin-top: 70px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            transition-property: height , width, background-color, font-size, opacity;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+            opacity: 0.4;
+        }
+        .box2:hover{
+            background-color: brown;
+            width: 130px;
+            height: 70px;
+            font-size: 35px;
+            opacity: 1;
+        }
+        .box:hover{
+            background-color: darkslateblue;
+            height: 80px;
+            width: 190px;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    hii
+    <div class="box">Mohini</div><br>
+    <div class="box2">CSS</div>
+
+</body>
+</html>

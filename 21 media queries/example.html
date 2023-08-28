@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: mediumpurple;
+            border: 1px solid purple;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            border: 1px solid black;
+            background-color: rgb(221, 61, 93);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            section{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </section>
+</body>
+</html>

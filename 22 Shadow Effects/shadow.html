@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --shadow : 15px 15px 10px rgb(134, 76, 228)
+        }
+        *{
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 600px;
+            width: 97%;
+            border: solid 1px black;
+            background-color: rgb(212, 230, 219);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--shadow), -15px -15px 10px rgb(134, 76, 228) , inset -4px -4px 3px rgb(54, 53, 80);
+           
+        }
+        .box{
+            height: 450px;
+            width: 50%;
+            border: solid red 1px;
+            background-color: rgb(236, 212, 234);
+            /* box-shadow: 10px 10px rgb(191, 235, 135); */
+            box-shadow: 4px 4px 5px 20px rgb(135, 212, 135);
+        }
+        img{
+            box-shadow: -3px -3px rgb(228, 171, 50) , var(--shadow);
+        }
+        h1{
+            text-shadow: 3px 3px 3px rgb(16, 136, 216) , -1px -3px rgb(216, 10, 10) , -4px 1px 3px yellowgreen;
+        }
+        p{
+            text-shadow: -1px -1px rgb(212, 110, 27);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img height="90px" width="90px" src="lappy.jpg" alt="logo">
+            <h1>Welcome to Software Industry</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, incidunt asperiores. In nesciunt a 
+                illo numquam. Voluptas accusantium mollitia ad nisi blanditiis ut!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

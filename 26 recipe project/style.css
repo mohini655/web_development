@@ -1,0 +1,131 @@
+.navlinks{
+    list-style: none;
+    /* background-color: cornflowerblue; */
+    background: rgb(67,147,232);
+    background: linear-gradient(90deg, rgba(67,147,232,1) 12%, rgba(81,224,144,1) 100%, rgba(253,29,29,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.name{
+    font-size: 25px;
+    color: aliceblue;
+    padding-left: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+ */
+ background-color: #acd0c9;
+background-image: linear-gradient(45deg, #acd0c9 0%, #dcd8b0 100%);
+
+ 
+}
+a{
+    text-decoration: none ;
+}
+.tags{
+    word-spacing: 20px;
+    color: rgb(67,147,232);
+}
+.bigbox{
+    height: 520px;
+    display: flex;
+    align-items: center;
+}
+.mainitem{
+    background-color: rgb(253, 211, 217);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    box-shadow: 0px 0px 5px 4px rgb(97, 95, 95);
+}
+
+.footer{
+    background-color: rgb(67,147,232);
+    text-align: center;
+    color: azure;
+    height: 20px;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    /* height: 171px; */
+    /* border: solid 1px black; */
+    padding: 10px;
+    position: relative;
+}
+.box2{
+    display: flex;
+    justify-content: space-around;
+    /* height: 171px; */
+    /* border: solid 1px black; */
+    padding: 10px;
+    position: relative;
+}
+.box3{
+    display: flex;
+    justify-content: space-around;
+    /* height: 171px; */
+    /* border: solid 1px black; */
+    padding: 10px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+h2{
+    text-align: center;
+}
+.rightbox{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 3px rgb(32, 53, 94);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.rightbox:hover{
+    transform: scale(1.4);
+}
+.overlap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(48, 45, 45, 0.713);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.overlap:hover{
+    opacity: 1;
+}
+button{
+    height: 15px;
+    background-color: rgba(48, 45, 45, 0.713);
+    color: white;
+}

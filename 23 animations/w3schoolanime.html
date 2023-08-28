@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 20px;
+            box-sizing: border-box;
+            height: 40px;
+            width: 60px;
+            background-color: green;
+            font-size: 20px;
+            padding: 10px;
+            color: aliceblue;
+            border-radius: 10px;
+            animation-name: move;
+            position: relative;
+            /* @keyframes : duration | timing_func | delay | iteration_count | direction | fil_mode | play_state | name */
+            animation: 2s ease-in 0s 2 alternate both running move;
+        }
+        @keyframes move {
+            from{
+                left: 0;
+                top: 0;
+            }
+            to{
+                left: 600px;
+                top: 0;
+                background-color: aquamarine;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> CSS</div>
+</body>
+</html>

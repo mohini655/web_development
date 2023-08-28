@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            background: #8fdbee;
+        }
+        .box1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+        }
+        .box2{
+            width: 50%;
+        }
+        @media (max-width: 650px) {
+            section{
+                flex-direction: column;
+                align-items: center;
+            }
+            .box1{
+                width: 100%;
+            }
+            .box2{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">
+            <p>shopping</p>
+            <p>lamp</p>
+        </div>
+        <img class="box2" src="lamp.jpg" alt="img">
+    </section>
+</body>
+</html>
