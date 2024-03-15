@@ -24,8 +24,8 @@
 .box:hover{
     /* transform: rotate(-45deg); */
     /* transform: scale(0.5); */
-    /* transform: skew(180deg); */
-    transform: translate(200px, -200px);
+    transform: skew(180deg);
+    /* transform: translate(200px, -200px); */
 } 
 p{
     font-size: 20px;

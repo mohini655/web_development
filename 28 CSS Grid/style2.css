@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: solid black 2px;
+    background-color: cadetblue;
+    display: grid;    
+    /* grid-template-columns: repeat(1, 1fr);  */
+    grid-template-rows: repeat(6, 200px);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.item{
+    height: 100px; 
+    width: 100px; 
+    border: black solid 2px;
+    background-color: #d2db9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-self: center;
+    align-self: center; */
+    /* place-self: center; */
+}

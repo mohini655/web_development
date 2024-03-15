@@ -5,12 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    :root{
+        --color : rgb(231, 129, 129); /* global variable */
+    }
+    ul{
+        
+        background-color: #558de2;
+        list-style-type: "😍";
+    }
+    div p:first-child{
+        background-color: #ca9595;
+        color: #558de2;
+    }
+    div>p{
+        background-color: var(--color, #558de2);
+        color: black;
+    }
+</style>
 <body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, soluta ab eum quaerat qui! Ad debitis dolor tempore ipsa placeat aspernatur totam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem cumque. Commodi facere illo adipisci tenetur quasi temporibus sunt provident doloremque ea numquam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore provident nobis, quae, aspernatur architecto velit eos molestias veritatis totam, minima amet voluptatem alias?</p>
+    </div>
     hello guys <br>
     review from iphone
     recheck
     <h1>first heading</h1>
     <h6>last heading</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error vitae praesentium id blanditiis aut maxime non corporis. Laborum quod labore, tempore dolore exercitationem repellendus cupiditate nobis ab maiores reprehenderit, aut maxime distinctio architecto culpa dolor vel est doloribus expedita officiis consequatur molestias. Atque nostrum rem iusto nemo beatae tempore.</p>
-</body>
+
+    <svg height="200" width="200">
+        <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <div>
+        <img src="34.png" width="800" alt="svg image">
+    </div>
+    <!-- <div>
+        <svg height="30" width="30">
+            <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+        </svg>
+    </div> -->
+    <p>hello</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=IYaUs92p_ZrvFvd-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <img src="semantic-tags.png" height="350" alt="semantic-tags">
+    <pre>
+        <code>
+        #include&lt;iostream>
+        #include&lt;string.h>
+        using namespace std;
+        class student{
+            private:
+            int marks;
+            int Rollno;
+            string name;
+            public:
+            void setter(int mark, int roll , string nam){
+                marks = mark;
+                Rollno = roll;
+                name = nam;
+            }
+            int getmarks(){
+                return marks;
+            }
+            string getname(){
+                return name;
+            }
+            int getroll(){
+                return Rollno;
+            }
+        };
+        </code>
+    </pre>
+    <ul>
+        <li>kurkura</li>
+        <li>maggi</li>
+        <li>chips</li>
+        <li>burgur</li>
+        <li>redbull</li>
+    </ul>
+
 </html>

@@ -10,13 +10,13 @@
     <h1>Event regiration</h1>
     <form>
         <label for="name">Name :</label><br>
-        <input type="text" id="name">
+        <input type="text" id="name" required placeholder="enter you name">
         <br><br>
         <label for="email">Email :</label><br>
-        <input type="text" id="email">
+        <input type="email" id="email" >
         <br><br>
         <label for="Contact">Phone :</label><br>
-        <input type="tel" name="number" id="Contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+        <input type="tel" name="number" id="Contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required placeholder="000-000-0000">
         <br><br>
         <label for="occup">Occupation :</label><br>
         <select id="occup">
@@ -45,7 +45,7 @@
     <h1>Job Application</h1>
     <form>
         <label for="name">Name:</label><br>
-        <input type="text" id="name"><br><br>
+        <input type="text" id="name" autofocus><br><br>
         <label for="email">Email:</label><br>
         <input type="text" id="email"><br><br>
         <label for="num">Phone:</label><br>

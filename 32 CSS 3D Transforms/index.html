@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #e98db0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 4rem;
+            justify-content: center;
+        }
+        .item{
+            height: 200px;
+            width: 200px;
+            padding: 5px;
+            border: solid 1px red;
+            background-color: #e4b92e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #rx:hover{
+            transform: rotateX(45deg);
+        }
+        #ry:hover{
+            transform: rotateY(-45deg);
+        }
+        #rz:hover{
+            transform: rotateZ(90deg);
+        }
+        #tx:hover{
+            transform: translateX(85px);
+        }
+        #ty:hover{
+            transform: translateY(-30px);
+        }
+        #tz:hover{
+            transform: perspective(100px) translateZ(30px);
+        }
+        #sx:hover{
+            transform: scaleX(-3);
+        }
+        #sy:hover{
+            transform: scaleY(1.5);
+        }
+        #sz:hover{
+            transform: perspective(200px) scaleZ(5) rotateX(30deg);
+        }
+        #skx:hover{
+            transform: skewX(-30deg);
+        }
+        #sky:hover{
+            transform: skewY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="rx">Rotate X</div>
+        <div class="item" id="ry">Rotate Y</div>
+        <div class="item" id="rz">Rotate Z</div>
+        <div class="item" id="tx">Translate X</div>
+        <div class="item" id="ty">Translate Y</div>
+        <div class="item" id="tz">Translate Z</div>
+        <div class="item" id="sx">Scale X</div>
+        <div class="item" id="sy">Scale Y</div>
+        <div class="item" id="sky">Skew Y</div>
+        <div class="item" id="skx">Skew X</div>
+        <div class="item" id="sz">Scale Z</div>
+    </div>
+</body>
+</html>

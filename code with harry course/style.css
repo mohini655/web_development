@@ -1,0 +1,33 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+.body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(209, 183, 148);
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    background-color: #f89500ee;
+    color: white;
+}
+ul>li{
+    padding: 0rem 2rem 0rem 2rem;
+}
+.content{
+    height: 700px;
+    width: 100%;
+    background-color: darksalmon;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left, .right{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+}

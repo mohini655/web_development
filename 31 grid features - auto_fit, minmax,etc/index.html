@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Advanced Features</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 2rem;
+            background-color: #dbebc6;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit,minmax(100px, 300px));
+        }
+        .item{
+            border: 1px solid black;
+            background: #df8aeb;
+            padding: 5px;
+            color: white;
+            height: 200px;
+        }
+        input:autofill{
+            border: 3px solid darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <label for="name">Enter your Name: </label>
+    <input type="text" name="name" id="name">
+</body>
+</html>
