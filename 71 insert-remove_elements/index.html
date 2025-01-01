@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="border: 1px black solid;" data-designedby="mohini">
+            hello 
+            baffalow
+        </div>
+    </div>
+    <script>
+        console.log(document.querySelector(".container"));
+        document.querySelector(".box").style.backgroundColor = "red";
+        console.log(document.querySelector(".container").innerHTML);
+        console.log(document.querySelector(".container").innerText);
+        console.log(document.querySelector(".container").outerHTML);
+        console.log(document.querySelector(".container").tagName);
+        console.log(document.querySelector(".container").nodeName);
+        console.log(document.querySelector(".container").hidden);
+        // document.querySelector(".container").hidden = true;
+        document.querySelector(".box").innerHTML = "hello guys";
+        console.log(document.querySelector(".box").hasAttribute("style"));
+        console.log(document.querySelector(".box").getAttribute("style"));
+        console.log(document.querySelector(".box").attributes);
+        // console.log(document.querySelector(".box").setAttribute("style", "color : yellow"));
+        console.log(document.title);
+        document.title = "inserting and removing elements from document object model";
+        console.log(document.querySelector(".box").dataset);
+        // Creating and inserting a element in the document by javaScript
+        let div = document.createElement("div");
+        div.innerHTML = "hii, I am an inserted element"
+        div.setAttribute("class" , "addedEle");
+        // document.querySelector(".container").append(div);
+        document.querySelector(".container").insertAdjacentElement("afterend" , div);
+        // document.querySelector(".container").replaceWith(div);
+        // document.querySelector(".addedEle").remove();
+        document.querySelector(".addedEle").classList.add("inserted");
+        let cons = document.querySelector(".box");
+        cons.insertAdjacentHTML("beforeend", "<b> hello here i'm inserted element  </b>");
+        document.querySelector(".inserted").classList.toggle("green");
+    </script>
+</body>
+</html>
