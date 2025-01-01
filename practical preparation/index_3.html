@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Instructor's Feedback Form</title>
+    <style>
+      body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+      .radio-group {
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <script>
+      function validateForm() {
+        var studentId = document.forms["feedbackForm"]["studentId"].value;
+        var email = document.forms["feedbackForm"]["email"].value;
+        var instructorName =
+          document.forms["feedbackForm"]["instructorName"].value;
+        var courseCode = document.forms["feedbackForm"]["courseCode"].value;
+
+        if (
+          studentId == "" ||
+          email == "" ||
+          instructorName == "" ||
+          courseCode == ""
+        ) {
+          alert("All fields must be filled out");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h2 style="text-align: center">Course Instructor's Feedback Form</h2>
+
+    <form
+      name="feedbackForm"
+      onsubmit="return validateForm()"
+      method="post"
+      action="your-database-script-url"
+    >
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" name="studentId" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="instructorName">Instructor's Name:</label>
+      <input type="text" id="instructorName" name="instructorName" />
+
+      <label for="courseCode">Course Code:</label>
+      <input type="text" id="courseCode" name="courseCode" />
+
+      <label>Subject Knowledge of the Instructor:</label>
+      <div class="radio-group">
+        <label
+          ><input type="radio" name="subjectKnowledge" value="Very Good" /> Very
+          Good</label
+        >
+        <label
+          ><input type="radio" name="subjectKnowledge" value="Good" />
+          Good</label
+        >
+        <label
+          ><input type="radio" name="subjectKnowledge" value="Satisfactory" />
+          Satisfactory</label
+        >
+      </div>
+
+      <label
+        >Provided additional materials and internet source for the
+        course:</label
+      >
+      <div class="radio-group">
+        <label
+          ><input type="radio" name="additionalMaterials" value="Yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="additionalMaterials" value="No" />
+          No</label
+        >
+      </div>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>
+``

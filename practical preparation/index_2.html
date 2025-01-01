@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu Example</title>
+    <script>
+        function populateDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            var options = ["Option 1", "Option 2", "Option 3", "Option 4"];
+
+            for (var i = 0; i < options.length; i++) {
+                var option = document.createElement("option");
+                option.text = options[i];
+                option.value = options[i];
+                dropdown.add(option);
+            }
+        }
+
+        window.onload = populateDropdown;
+    </script>
+</head>
+<body>
+    <h2>Select an Option:</h2>
+    <select id="myDropdown">
+        <option value="" disabled selected>Select an option</option>
+    </select>
+</body>
+</html>

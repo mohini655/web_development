@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Feedback Form</title>
+    <script>
+        function validateForm() {
+            var email = document.forms["feedbackForm"]["email"].value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid e-mail address.");
+                return false;
+            }
+            return true;
+        }
+
+        function resetForm() {
+            // document.getElementsByTagName(form).reset();
+            document.getElementById("feedbackForm").reset();
+        }
+    </script>
+</head>
+<body>
+    <h2>Website Feedback Form</h2>
+    <form name="feedbackForm" onsubmit="return validateForm()">
+        <label for="info">Information available on the website:</label><br>
+        <input type="radio" id="veryGoodInfo" name="info" value="Very good">
+        <label for="veryGoodInfo">Very good</label><br>
+        <input type="radio" id="goodInfo" name="info" value="Good">
+        <label for="goodInfo">Good</label><br>
+        <input type="radio" id="satisfactoryInfo" name="info" value="Satisfactory">
+        <label for="satisfactoryInfo">Satisfactory</label><br><br>
+
+        <label for="experience">Overall experience using this website:</label><br>
+        <input type="radio" id="veryGoodExp" name="experience" value="Very good">
+        <label for="veryGoodExp">Very good</label><br>
+        <input type="radio" id="goodExp" name="experience" value="Good">
+        <label for="goodExp">Good</label><br>
+        <input type="radio" id="satisfactoryExp" name="experience" value="Satisfactory">
+        <label for="satisfactoryExp">Satisfactory</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="name">Your name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="address">Your address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="email">e-mail:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Reset" onclick="resetForm()">
+    </form>
+</body>
+</html>

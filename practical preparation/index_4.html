@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substring Extractor</title>
+</head>
+<body>
+
+<script>
+  // Prompt the user to input a string
+  let inputString = prompt("Please enter a string:");
+
+  // Check if the user entered a string
+  if (inputString) {
+    // Prompt the user to enter the start index for the substring
+    let startIndex = parseInt(prompt("Enter the start index (0-based):"));
+
+    // Prompt the user to enter the length of the substring
+    let length = parseInt(prompt("Enter the length of the substring:"));
+
+    // Check if the start index and length are valid numbers
+    if (!isNaN(startIndex) && !isNaN(length)) {
+      // Extract the substring
+      let substring = inputString.substring(startIndex, startIndex + length);
+
+      // Display the substring
+      alert("The extracted substring is: " + substring);
+    } else {
+      alert("Invalid input for start index or length. Please enter valid numbers.");
+    }
+  } else {
+    alert("You did not enter a string.");
+  }
+</script>
+
+</body>
+</html>
